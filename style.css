@@ -9,6 +9,11 @@ body{
   background-color: #f9f9f9;
 }
 
+.main{
+  flex: 1;
+  padding: 24px;
+}
+
 .header{
   display: flex;
   align-items: center;
@@ -113,4 +118,47 @@ button:hover{
 
 .search-btn:hover{
   background-color: #e0e0e0;
+}
+
+.content{
+  display: flex;
+}
+
+.sidebar{
+  width: 240px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+}
+
+.sidebar-link:hover{
+  background-color: #f0f0f0;
+}
+
+.sidebar-link.active{
+  background-color: #e0e0e0;
+  font-weight: 500;
+}
+
+.sidebar hr{
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
 }
