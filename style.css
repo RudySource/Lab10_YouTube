@@ -31,6 +31,7 @@ body{
   flex : 1;
   max-width: 600px;
   margin: 0 40px;
+  gap: 0;
 }
 
 .search-input{
@@ -85,3 +86,31 @@ button:hover{
   background-color: #ccc;
 }
 
+.search-input{
+  flex: 1;
+  height: 40px;
+  padding: 0px 16px;
+  border: 1px solid #ccc;
+  border-radius: 40px 0 0 40px;
+  outline: none;
+  font-size: 16px;
+  border-right: none;
+}
+
+.search-input:focus{
+  border-color: #0062ff;
+}
+
+.search-btn{
+  width: 40px;
+  height: 40px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 0 40px 40px 0;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-btn:hover{
+  background-color: #e0e0e0;
+}
